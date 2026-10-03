@@ -20,7 +20,7 @@ const Recipescontex = ({children}) => {
     const [Recipes, setRecipes] = useState([ 
    ]);
     const [formdata, setformdata] = useState([
-      JSON.parse(localStorage.getItem("formdata"))
+      JSON.parse(localStorage.getItem("formdata")) || [] 
     ])
   return (
     <div>

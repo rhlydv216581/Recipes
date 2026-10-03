@@ -11,7 +11,8 @@ const Recipescard = () => {
   return (
     // const {formdata}= useContext(Recpicesformdata)
     <div className='Recipeallcard' >
- {formdata.map((item)=>(
+      {/* agar .filter(Boolean)  data hai formdata mai tho dekh nhi tho [] ho  nahi tho (localstorage) mai tho shw ho  */}
+ {formdata.filter(Boolean).map((item)=>(
       // <Link to="/Recipes/Singlerecipes">
   // koi bhi elemt ko clicked karu tho muja ussa ka detailpag dekh tho maina params use kar rahu aur rout mai :id hai issa ka matlab ye dynamic id hai 
   //  to={`/Recipes/detail/${item.id}`} 
