@@ -1,0 +1,58 @@
+.cuisine-container {
+  /* background: rgba(255, 255, 255, 0.5); */
+  /* padding: auto; */
+  /* background: rgb(0, 0, 0,0.15); */
+  width: 100%;
+  border-radius: 2rem;
+  padding: 0.5rem;
+  height: 8rem;
+  white-space: nowrap;
+  /* text-wrap: wrap; */
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* flex-direction: column; */
+ 
+  /* align-items: center; */
+}
+
+.cuisine-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0rem 1rem;
+  /* font-size: 2rem; */
+  color: #FFC000 ;
+}
+.cuisine-title svg {
+  width: 40px;
+  height: 40px;
+  font-weight: 800;
+}
+
+.cuisine-slide {
+  backdrop-filter: 4px;
+  /* backdrop-filterblur: ; */
+  padding: 10px;
+}
+
+/* slick-slider slick-initialized */
+
+.cuisine-button {
+   /* font-family: "Great Vibes", cursive; */
+   font-size: 1.4rem;
+  display: block;
+  padding: 0.8rem;
+  text-align: center;
+  text-decoration: none;
+  color:#eeb95f;
+   /* white-space: nowrap; */
+  overflow: hidden;
+  /* text-overflow: ellipsis; */
+  /* background: rgba(255, 255, 255, 0.15); */
+  background: rgba(255, 255, 255, 0.15) ;
+  /* color: #F1E5D1; */
+  border-radius: 8px;
+  
+}

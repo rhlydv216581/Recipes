@@ -1,0 +1,332 @@
+.singlerecipes {
+  width: 100%;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+.singlerecipes .header {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.singlerecipes .header .title {
+  margin: 0;
+}
+.singlerecipes .main-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.singlerecipes .left-side {
+  width: 100%;
+}
+.singlerecipes .left-side .hero-image {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 18px;
+}
+.singlerecipes .left-side .hero-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.singlerecipes .right-side {
+  width: 100%;
+  box-sizing: border-box;
+}
+.singlerecipes .right-side .meta-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  padding: 1rem 0;
+}
+.singlerecipes .right-side .meta-info .meta-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+.singlerecipes .right-side .meta-info .meta-item .meta-label {
+  color: #999;
+  font-size: 1rem;
+}
+.singlerecipes .right-side .meta-info .meta-item .meta-value {
+  color: #222;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.singlerecipes .right-side .tabs {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  padding: 1rem 0;
+}
+.singlerecipes .right-side .tabs .tab {
+  cursor: pointer;
+  color: #999;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  transition: 0.2s ease;
+}
+.singlerecipes .right-side .tabs .tab.active {
+  color: #8f4435;
+  font-weight: 600;
+  border-bottom: 2px solid #8f4435;
+}
+.singlerecipes .right-side .tab-content {
+  padding: 1rem 0;
+}
+.singlerecipes .right-side .tab-content .ingredients-list {
+  width: 100%;
+}
+.singlerecipes .right-side .tab-content .ingredient-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.7rem 0;
+  border-bottom: 1px solid #eee;
+}
+.singlerecipes .right-side .tab-content .ingredient-row .ingredient-name {
+  font-size: 1rem;
+}
+.singlerecipes .right-side .tab-content .ingredient-row .ingredient-qty {
+  color: #777;
+}
+.singlerecipes .right-side .tab-content .instruction-row {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.singlerecipes .right-side .tab-content .instruction-row .instruction-number {
+  font-weight: 700;
+  color: #8f4435;
+}
+.singlerecipes .right-side .tab-content .instruction-row .instruction-text {
+  margin: 0;
+  line-height: 1.6;
+}
+.singlerecipes .right-side .tab-content .instruction-image {
+  width: 100%;
+  margin-top: 1rem;
+}
+.singlerecipes .right-side .tab-content .instruction-image img {
+  width: 100%;
+  border-radius: 12px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.singlerecipes .right-side .tab-content .reviews-list {
+  width: 100%;
+}
+.singlerecipes .right-side .tab-content .reviews-list > p {
+  color: #8f4435;
+  margin-bottom: 1rem;
+}
+.singlerecipes .right-side .tab-content .reviews-list .review-card {
+  display: flex;
+  gap: 1.2rem;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid #777;
+  border-radius: 12px;
+}
+.singlerecipes .right-side .tab-content .reviews-list .review-card .wrap {
+  flex: 1;
+}
+.singlerecipes .right-side .tab-content .reviews-list .review-card img {
+  width: 90px;
+  height: 90px;
+  flex-shrink: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+}
+.singlerecipes .right-side .tab-content .reviews-list .review-card .top {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.singlerecipes .right-side .tab-content .reviews-list .review-card .same {
+  margin: 0;
+  color: #8f4435;
+  font-size: 1rem;
+}
+.singlerecipes .right-side .tab-content .reviews-list .review-card p {
+  color: #8f4435;
+}
+.singlerecipes .right-side .tab-content .reviews-list .review-card .review-category {
+  display: inline-block;
+  background: #8f4435;
+  color: white;
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+}
+
+@media (min-width: 1028px) {
+  .singlerecipes {
+    width: 100%;
+    height: 100vh;
+    padding: 0.8rem 2rem 1rem;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+  .singlerecipes .header {
+    height: 0;
+    overflow: hidden;
+    margin: 0;
+  }
+  .singlerecipes .header .title {
+    font-size: 2.6rem;
+  }
+  .singlerecipes .main-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    align-items: stretch;
+  }
+  .singlerecipes .left-side {
+    width: 50%;
+    height: 100%;
+    flex-shrink: 0;
+  }
+  .singlerecipes .left-side .hero-image {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    border-radius: 16px;
+    overflow: hidden;
+  }
+  .singlerecipes .left-side .hero-image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
+  }
+  .singlerecipes .right-side {
+    width: 50%;
+    height: 100%;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding-right: 0.5rem;
+    box-sizing: border-box;
+  }
+  .singlerecipes .right-side::-webkit-scrollbar {
+    width: 5px;
+  }
+  .singlerecipes .right-side::-webkit-scrollbar-thumb {
+    background: #bbb;
+    border-radius: 10px;
+  }
+  .singlerecipes .right-side::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  .singlerecipes .right-side .meta-info {
+    width: 100%;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1.2rem 0.5rem;
+    border-bottom: 1px solid #ddd;
+    box-sizing: border-box;
+  }
+  .singlerecipes .right-side .meta-info .meta-item {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem;
+  }
+  .singlerecipes .right-side .meta-info .meta-item .meta-label {
+    font-size: 1.6rem;
+    color: #999;
+    line-height: 1.2;
+  }
+  .singlerecipes .right-side .meta-info .meta-item .meta-value {
+    font-size: 1rem;
+    color: #222;
+    font-weight: 600;
+  }
+  .singlerecipes .right-side .tabs {
+    width: 100%;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem 0;
+    border-bottom: 1px solid #ddd;
+    box-sizing: border-box;
+  }
+  .singlerecipes .right-side .tabs .tab {
+    font-size: 1.2rem;
+    color: #999;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    transition: all 0.2s ease;
+  }
+  .singlerecipes .right-side .tabs .tab.active {
+    color: #8f4435;
+    font-weight: 700;
+    border-bottom: 2px solid #222;
+  }
+  .singlerecipes .right-side .tab-content {
+    width: 100%;
+    padding: 1rem;
+    box-sizing: border-box;
+  }
+  .singlerecipes .right-side .tab-content .ingredient-name {
+    font-size: 1.2rem;
+  }
+  .singlerecipes .right-side .tab-content .ingredient-qty {
+    font-size: 1rem;
+  }
+  .singlerecipes .right-side .tab-content .instruction-number {
+    font-size: 1.3rem;
+  }
+  .singlerecipes .right-side .tab-content .instruction-text {
+    line-height: 1.6rem;
+    font-size: 1.1rem;
+  }
+  .singlerecipes .right-side .tab-content .review-card {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+  .singlerecipes .right-side .tab-content .review-card .wrap {
+    min-width: 0;
+    flex: 1;
+  }
+  .singlerecipes .right-side .tab-content .review-card .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  .singlerecipes .right-side .tab-content .review-card .same {
+    font-size: 1.5rem;
+  }
+  .singlerecipes .right-side .tab-content .review-card img {
+    width: 95px;
+    height: 95px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+}/*# sourceMappingURL=Showrecipes.css.map */

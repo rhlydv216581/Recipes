@@ -1,0 +1,84 @@
+.homedesing-page {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+  overflow: hidden;
+  background-image: url("https://media1.tenor.com/m/0wsbs-Ik8EAAAAAC/gaeul-ive.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  border-radius: 2rem;
+}
+.homedesing-page .homecontant {
+  text-align: cente left;
+  width: 100%;
+  padding: 1.5rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  width: 38rem;
+}
+.homedesing-page .homecontant h1 {
+  margin: 0;
+  font-size: 3rem;
+  line-height: 1.1;
+  font-weight: 700;
+}
+.homedesing-page .homecontant h1 span {
+  color: #FFDF00;
+}
+.homedesing-page .homecontant h1 img {
+  display: inline-block;
+  width: 3rem;
+  height: 3rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin-left: 0.3rem;
+}
+.homedesing-page .homecontant p {
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+  line-height: 1.6;
+}
+.homedesing-page .homecontant button {
+  padding: 0.8rem 1.8rem;
+  margin-right: 0.8rem;
+  border: none;
+  border-radius: 0.6rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+@media (min-width: 1024px) {
+  .homedesing-page {
+    background-image: none;
+  }
+  .homedesing-page::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("https://media1.tenor.com/m/0wsbs-Ik8EAAAAAC/gaeul-ive.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top right;
+    clip-path: polygon(57% 0, 100% 0, 100% 99%, 28% 100%);
+    z-index: 1;
+  }
+  .homedesing-page .homecontant {
+    left: 3rem;
+    width: 32rem;
+  }
+  .homedesing-page .homecontant h1 {
+    font-size: 3.2rem;
+  }
+  .homedesing-page .homecontant h1 img {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+  .homedesing-page .homecontant p {
+    font-size: 1rem;
+  }
+}/*# sourceMappingURL=Homedesing.css.map */

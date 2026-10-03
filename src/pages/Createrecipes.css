@@ -1,0 +1,177 @@
+.create-recipes {
+  width: 100%;
+  flex: 1;
+  background-image: url("../assets/Chef.png");
+  background-image: url("../assets/Chef.png"), url("../assets/Backg.png");
+  background-position: bottom center, center center;
+  background-repeat: no-repeat, no-repeat;
+  background-size: 50vh auto, cover;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+.create-recipes .Toastify__toast--success {
+  background: #16a34a !important;
+}
+.create-recipes img {
+  height: 15dvh;
+  -o-object-fit: fill;
+     object-fit: fill;
+  width: 100%;
+  display: block;
+  -o-object-position: center;
+     object-position: center;
+}
+.create-recipes #Chef {
+  margin: 0.5rem 3.5rem;
+  height: 35dvh;
+  width: auto;
+}
+.create-recipes .form-box {
+  overflow-x: hidden;
+  position: relative;
+  padding: 1rem 0.5rem;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.create-recipes .form-box label {
+  display: flex;
+  flex-direction: row;
+  gap: 0.7rem;
+  width: 100%;
+}
+.create-recipes .form-box label img {
+  width: 2.8rem;
+  height: 2.8rem;
+  mix-blend-mode: multiply;
+}
+.create-recipes .form-box label .wrap {
+  display: flex;
+  flex-direction: column;
+}
+.create-recipes .form-box label .wrap select, .create-recipes .form-box label .wrap textarea, .create-recipes .form-box label .wrap input {
+  box-shadow: 18px 13px 5px rgba(143, 70, 56, 0.5);
+  background: transparent;
+  width: 100%;
+  font-size: 1.7rem;
+  flex: 1;
+  border: none;
+  border-bottom: 4px solid var(--primary);
+  border-radius: 0.7rem;
+  color: #8F4638;
+  padding: 0rem 1.3rem;
+}
+.create-recipes .form-box label .wrap select option, .create-recipes .form-box label .wrap textarea option, .create-recipes .form-box label .wrap input option {
+  background-color: #F1E5D1; /* Aapka secondary color */
+  color: #8F4638; /* Aapka primary color */
+  font-size: 1.5rem;
+}
+.create-recipes .form-box label .wrap small {
+  display: block;
+  margin: 0;
+  padding: 0;
+  font-size: 2rem;
+  color: #FFFFFF;
+}
+.create-recipes .form-box label input:focus,
+.create-recipes .form-box label textarea:focus {
+  outline: none;
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.3);
+}
+.create-recipes .form-box .pill-btn {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  border: 0;
+  border-radius: 1rem;
+  background: transparent;
+  color: #8F4638;
+  width: 15rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  overflow: hidden;
+  isolation: isolate;
+}
+.create-recipes .form-box .pill-btn::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 2px;
+  background: linear-gradient(135deg, #8F4638, #d94cff, #ff27e8);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  z-index: -1;
+}
+.create-recipes .form-box .pill-btn::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: linear-gradient(135deg, #8F4638, #F1E5D1);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s ease;
+  z-index: -2;
+}
+.create-recipes .form-box .pill-btn {
+  transition: color 0.3s ease;
+}
+.create-recipes .form-box .pill-btn:hover {
+  color: #FFFFFF;
+}
+.create-recipes .form-box .pill-btn:hover::after {
+  transform: scaleX(1);
+}
+.create-recipes .form-box input:-webkit-autofill {
+  -webkit-text-fill-color: var(--primary) !important; /* Text color */
+  -webkit-transition: background-color 5000s ease-in-out 0s;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+@media (min-width: 1024px) {
+  .create-recipes .Toastify__toast--success {
+    background: #16a34a !important;
+  }
+  .create-recipes {
+    overflow-y: scroll;
+    max-height: 100vh;
+    width: 100%;
+    background-image: url("../assets/Chef.png"), url(https://png.pngtree.com/png-vector/20250113/ourmid/pngtree-smiling-female-chef-presenting-a-gourmet-dish-in-black-and-white-png-image_15173349.png), url("../assets/Backg.png");
+    background-position: 80% bottom, 0% bottom, center center;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-size: 50dvh, contain, cover;
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    align-items: center;
+  }
+  .create-recipes img {
+    height: 30dvh;
+    width: 35vb;
+  }
+  .create-recipes .form-box {
+    height: auto;
+    overflow-y: auto;
+    width: 73vb;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .create-recipes .form-box .pill-btn {
+    padding: 1.5rem 0rem;
+    font-size: 1.5rem;
+    width: 10rem;
+    box-shadow: 19px 10px 5px #8F4638;
+  }
+}/*# sourceMappingURL=Createrecipes.css.map */

@@ -1,0 +1,808 @@
+// $overlay-gradient: linear-gradient(180deg, rgba(10, 10, 10, 0) 0%, rgba(24, 26, 27, 0.95) 70%, #0f1415 100%);
+
+// .singlerecipes {
+//   // background: #000;
+//   width: 100%;
+//   height: 100%;
+//   background-color: #f5f0e8;
+//   display: flex;
+//   flex-direction: column;
+//   padding: 1rem;
+//   font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display",
+//     "Helvetica Neue", Helvetica, Arial, sans-serif;
+//   box-sizing: border-box;
+
+  
+//   .header {
+//     // background:#F1E5D1;
+//     display: flex;
+//     align-items: center;
+//     justify-content: space-between;
+//     padding: 0.5rem 0;
+//     width: 100%;
+
+    
+
+//     .title {
+//       font-size: 2.5rem;
+//       font-weight: 700;
+//       text-align: center;
+//       flex: 1;
+//       margin: 0;
+//       line-height: 1.3;
+//       color: #2b2b2b;
+//     }
+//   }
+
+//   // ================================
+//   // ✅ MAIN CONTENT (2 columns on laptop)
+//   // ================================
+//   .main-content {
+//     background: #F1E5D1;
+//     display: flex;
+//     flex-direction: column; // Mobile: stack vertically
+//     gap: 1rem;
+//     width: 100%;
+//     flex: 1;
+
+//     // LEFT SIDE (Hero Image)
+//     .left-side {
+//       width: 100%;
+
+//       .hero-image {
+//         width: 100%;
+//         height: 280px;
+//         border-radius: 12px;
+//         overflow: hidden;
+
+//         img {
+//           width: 100%;
+//           height: 100%;
+//           object-fit: cover;
+//           display: block;
+//         }
+//       }
+//     }
+
+//     // RIGHT SIDE (Meta + Tabs + Content)
+//     .right-side {
+//       width: 100%;
+//       display: flex;
+//       flex-direction: column;
+//     }
+//   }
+
+//   // ================================
+//   // ✅ META INFO
+//   // ================================
+//   .meta-info {
+//     display: flex;
+//     justify-content: space-between;
+//     padding: 1rem 0;
+//     border-bottom: 1px solid #e0d8c8;
+
+//     .meta-item {
+//       display: flex;
+//       flex-direction: column;
+//       align-items: center;
+//       gap: 0.3rem;
+//       flex: 1;
+
+//       .meta-label {
+//         font-size: 0.75rem;
+//         color: #9a9a9a;
+//       }
+
+//       .meta-value {
+//         font-size: 0.9rem;
+//         font-weight: 600;
+//         color: #2b2b2b;
+//         display: flex;
+//         align-items: center;
+//         gap: 0.3rem;
+//       }
+//     }
+//   }
+
+//   // ================================
+//   // ✅ TABS
+//   // ================================
+//   .tabs {
+//     display: flex;
+//     justify-content: space-around;
+//     padding: 1rem 0;
+//     border-bottom: 1px solid #e0d8c8;
+
+//     .tab {
+//       font-size: 0.95rem;
+//       color: #9a9a9a;
+//       cursor: pointer;
+//       padding-bottom: 0.5rem;
+//       font-weight: 500;
+//       transition: all 0.2s ease;
+
+//       &.active {
+//         color: #8F4638;
+//         font-weight: 700;
+//         border-bottom: 2px solid #2b2b2b;
+//       }
+
+//       &:hover {
+//         color: #8F4638;
+//       }
+//     }
+//   }
+
+//   // ================================
+//   // ✅ TAB CONTENT
+//   // ================================
+//   .tab-content {
+//     padding: 1rem 0;
+//     flex: 1;
+//   }
+
+//   .ingredients-list {
+//     .ingredient-row {
+//       display: flex;
+//       justify-content: space-between;
+//       align-items: center;
+//       padding: 0.6rem 0;
+//       border-bottom: 1px dashed #e0d8c8;
+
+//       .ingredient-name {
+//         font-size: 0.9rem;
+//         color: #2b2b2b;
+//         font-weight: 500;
+//       }
+
+//       .ingredient-qty {
+//         font-size: 0.9rem;
+//         color: #2b2b2b;
+//         font-weight: 600;
+//       }
+//     }
+//   }
+
+//   .instructions-list {
+//     display: flex;
+//     flex-direction: column;
+//     gap: 1rem;
+
+//     .instruction-row {
+//       display: flex;
+//       gap: 0.6rem;
+//       align-items: flex-start;
+
+//       .instruction-number {
+//         font-size: 0.95rem;
+//         font-weight: 700;
+//         color: #2b2b2b;
+//         min-width: 20px;
+//       }
+
+//       .instruction-text {
+//         font-size: 0.9rem;
+//         line-height: 1.6;
+//         color: #4a4a4a;
+//         margin: 0;
+//       }
+//     }
+
+//     .instruction-image {
+//       width: 100%;
+//       height: 200px;
+//       border-radius: 12px;
+//       overflow: hidden;
+//       margin-top: 0.5rem;
+
+//       img {
+//         width: 100%;
+//         height: 100%;
+//         object-fit: cover;
+//         display: block;
+//       }
+//     }
+//   }
+
+//   .reviews-list {
+//   width: 100%;
+
+//   .no-reviews {
+//     color: #8F4638;
+//     font-size: 0.9rem;
+//     text-align: center;
+//     padding: 2rem 0;
+//   }
+
+//   .review-card {
+//     border: 1px solid #4a4a4a;
+//     overflow-y: scroll;
+//     border-radius: 10px;
+//     padding: 20px;
+//     margin-bottom: 16px;
+//     color: #8F4638;
+//     display: flex;
+//     gap: 3rem;
+//     align-items:center ;
+//     // justify-content:space-between;
+//     img{
+//       width: 5rem;
+//       height: 100%;
+//       object-fit:cover;
+//       // object-fit:cover;
+//       object-position:50% 10%;
+//       border-radius: 2rem;
+//     }
+//     .wrap{
+//       width: 100%;
+//       height: 100%;
+//       // flex-direction:row;
+//       .top{
+//         display: flex;
+//         width: 100%;
+//         // background: #000;
+//       justify-content: space-around;
+//     h3 {
+//       color: #8F4638;
+//       font-size: 1.2rem;
+//       margin: 0 0 10px;
+//     }
+//       }
+
+//     p {
+//       color: #8F4638;
+//       font-size: 0.95rem;
+//       line-height: 1.6;
+//       margin: 0 0 14px;
+//     }
+
+//     .review-category {
+//       display: inline-block;
+//       background: #8F4638;
+//       color: #FFFFFF;
+//       padding: 6px 12px;
+//       border: #0f1415 solid;
+//       border-radius: 20px ;
+//       font-size: 0.8rem;
+//     }
+//   }
+//   }
+// }
+//   // .reviews-list {
+//   //   p {
+//   //     color: #9a9a9a;
+//   //     font-size: 0.9rem;
+//   //     text-align: center;
+//   //     padding: 2rem 0;
+//   //   }
+//   // }
+
+//   // ================================
+//   // 🖥️ LAPTOP VIEW (768px+)
+//   // ================================
+//   @media (min-width: 1028px) {
+
+//     padding: 2rem;
+
+//     .header {
+//       .title {
+//         font-size: 2.6rem;
+//       }
+//     }
+
+//     .main-content {
+//       // background: #000;
+//       overflow: hidden;
+//       flex-direction: row; // ✅ 2 columns
+//       gap: 2rem;
+//       // align-items: flex-start;
+//       max-height: 100vh; // header height minus
+
+//       // LEFT: 50% width, 100% height
+//       .left-side {
+//         width: 50%;
+//         height: 100%;
+
+//         .hero-image {
+//           width: 100%;
+//           height: 100%; // full height
+//           margin: 0;
+
+//           img {
+//             width: 100%;
+//             height: 50%;
+//             object-fit: cover;
+//           }
+   
+//         }
+   
+//       }
+
+//       // RIGHT: 50% width, 100% height
+//       .right-side {
+//         width: 50%;
+//         height: 100%;
+//         overflow-y: auto; // content scroll ho sake
+//         padding-right: 0.5rem;
+//         display: flex;
+//         gap: 2rem;
+//         // box-shadow: ;
+//         // font-size: 7rem;
+//       }
+//     .meta-info {
+//       // height: ;
+//       padding: 1.5rem  1rem;
+//       // height: 8rem;
+//       .meta-item{
+//         height: 5rem;
+//         .meta-label{
+//           font-size: 2rem;
+//         }
+//         .meta-value{
+//           font-size: 1.2rem;
+//         }
+
+//         // font-size: 4rem;
+//       }
+//     }
+
+//     .tabs {
+//       padding: 1rem 0;
+//       .tab{
+//         font-size: 1.3rem;
+//       }
+//     }
+//     .tab-content{
+//       padding: 0.8rem;
+//       .ingredient-name{
+//         font-size: 1.3rem;
+//       }
+//       .instruction-number{
+//         font-size: 1.4rem;
+//       }
+//       .instruction-text{
+//         line-height: 1.5rem;
+//         font-size: 1.4rem;
+//       }
+//     }
+//     }
+
+    
+//   }
+// }
+
+.singlerecipes {
+  width: 100%;
+  min-height: 100vh;
+  box-sizing: border-box;
+
+  .header {
+    width: 100%;
+    margin-bottom: 1rem;
+
+    .title {
+      margin: 0;
+    }
+  }
+
+  .main-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  // ---------------- LEFT ----------------
+
+  .left-side {
+    width: 100%;
+
+    .hero-image {
+      width: 100%;
+      overflow: hidden;
+      border-radius: 18px;
+
+      img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+
+  // ---------------- RIGHT ----------------
+
+  .right-side {
+    width: 100%;
+    box-sizing: border-box;
+
+    .meta-info {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #ddd;
+      padding: 1rem 0;
+
+      .meta-item {
+        display: flex;
+        flex-direction: column;
+        gap: 0.4rem;
+
+        .meta-label {
+          color: #999;
+          font-size: 1rem;
+        }
+
+        .meta-value {
+          color: #222;
+          font-size: 1rem;
+          font-weight: 600;
+        }
+      }
+    }
+
+    // ---------------- TABS ----------------
+
+    .tabs {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      border-bottom: 1px solid #ddd;
+      padding: 1rem 0;
+
+      .tab {
+        cursor: pointer;
+        color: #999;
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
+        transition: 0.2s ease;
+
+        &.active {
+          color: #8f4435;
+          font-weight: 600;
+          border-bottom: 2px solid #8f4435;
+        }
+      }
+    }
+
+    // ---------------- CONTENT ----------------
+
+    .tab-content {
+      padding: 1rem 0;
+
+      .ingredients-list {
+        width: 100%;
+      }
+
+      .ingredient-row {
+        display: flex;
+        justify-content: space-between;
+        padding: 0.7rem 0;
+        border-bottom: 1px solid #eee;
+
+        .ingredient-name {
+          font-size: 1rem;
+        }
+
+        .ingredient-qty {
+          color: #777;
+        }
+      }
+
+      // ---------------- INSTRUCTIONS ----------------
+
+      .instruction-row {
+        display: flex;
+        gap: 1rem;
+        margin-bottom: 1rem;
+
+        .instruction-number {
+          font-weight: 700;
+          color: #8f4435;
+        }
+
+        .instruction-text {
+          margin: 0;
+          line-height: 1.6;
+        }
+      }
+
+      .instruction-image {
+        width: 100%;
+        margin-top: 1rem;
+
+        img {
+          width: 100%;
+          border-radius: 12px;
+          object-fit: cover;
+        }
+      }
+
+      // ---------------- REVIEWS ----------------
+
+      .reviews-list {
+        width: 100%;
+
+        > p {
+          color: #8f4435;
+          margin-bottom: 1rem;
+        }
+
+        .review-card {
+          display: flex;
+          gap: 1.2rem;
+          width: 100%;
+          box-sizing: border-box;
+          padding: 1rem;
+          margin-bottom: 1rem;
+
+          border: 1px solid #777;
+          border-radius: 12px;
+
+          .wrap {
+            flex: 1;
+          }
+
+          img {
+            width: 90px;
+            height: 90px;
+            flex-shrink: 0;
+            object-fit: cover;
+            border-radius: 50%;
+          }
+
+          .top {
+            display: flex;
+            justify-content: space-between;
+            gap: 1rem;
+          }
+
+          .same {
+            margin: 0;
+            color: #8f4435;
+            font-size: 1rem;
+          }
+
+          p {
+            color: #8f4435;
+          }
+
+          .review-category {
+            display: inline-block;
+            background: #8f4435;
+            color: white;
+            padding: 0.4rem 1rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+// =====================================================
+// LAPTOP / DESKTOP
+// =====================================================
+
+@media (min-width: 1028px) {
+
+  .singlerecipes {
+    width: 100%;
+    height: 100vh;
+    padding: 0.8rem 2rem 1rem;
+    box-sizing: border-box;
+    overflow: hidden;
+
+    // ---------------- HEADER ----------------
+
+    .header {
+      height: 0;
+      overflow: hidden;
+      margin: 0;
+
+      .title {
+        font-size: 2.6rem;
+      }
+    }
+
+    // ---------------- MAIN ----------------
+
+    .main-content {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: row;
+      gap: 2rem;
+      align-items: stretch;
+    }
+
+    // ---------------- LEFT IMAGE ----------------
+
+    .left-side {
+      width: 50%;
+      height: 100%;
+      flex-shrink: 0;
+
+      .hero-image {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        border-radius: 16px;
+        overflow: hidden;
+
+        img {
+          display: block;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          object-position: center;
+        }
+      }
+    }
+
+    // ---------------- RIGHT ----------------
+
+    .right-side {
+      width: 50%;
+      height: 100%;
+      min-width: 0;
+
+      display: flex;
+      flex-direction: column;
+
+      overflow-y: auto;
+      overflow-x: hidden;
+
+      padding-right: 0.5rem;
+      box-sizing: border-box;
+
+      // scrollbar
+      &::-webkit-scrollbar {
+        width: 5px;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background: #bbb;
+        border-radius: 10px;
+      }
+
+      &::-webkit-scrollbar-track {
+        background: transparent;
+      }
+
+      // ---------------- META ----------------
+
+      .meta-info {
+        width: 100%;
+        flex-shrink: 0;
+
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        padding: 1.2rem 0.5rem;
+        border-bottom: 1px solid #ddd;
+        box-sizing: border-box;
+
+        .meta-item {
+          height: auto;
+
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+
+          gap: 0.4rem;
+
+          .meta-label {
+            font-size: 1.6rem;
+            color: #999;
+            line-height: 1.2;
+          }
+
+          .meta-value {
+            font-size: 1rem;
+            color: #222;
+            font-weight: 600;
+          }
+        }
+      }
+
+      // ---------------- TABS ----------------
+
+      .tabs {
+        width: 100%;
+        flex-shrink: 0;
+
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        padding: 1rem 0;
+        border-bottom: 1px solid #ddd;
+        box-sizing: border-box;
+
+        .tab {
+          font-size: 1.2rem;
+          color: #999;
+          cursor: pointer;
+
+          padding: 0.5rem 1rem;
+
+          transition: all 0.2s ease;
+
+          &.active {
+            color: #8f4435;
+            font-weight: 700;
+            border-bottom: 2px solid #222;
+          }
+        }
+      }
+
+      // ---------------- TAB CONTENT ----------------
+
+      .tab-content {
+        width: 100%;
+        padding: 1rem;
+        box-sizing: border-box;
+
+        .ingredient-name {
+          font-size: 1.2rem;
+        }
+
+        .ingredient-qty {
+          font-size: 1rem;
+        }
+
+        .instruction-number {
+          font-size: 1.3rem;
+        }
+
+        .instruction-text {
+          line-height: 1.6rem;
+          font-size: 1.1rem;
+        }
+
+        // ---------------- REVIEW CARD ----------------
+
+        .review-card {
+          width: 100%;
+          box-sizing: border-box;
+
+          display: flex;
+          gap: 1rem;
+
+          padding: 1rem;
+          margin-bottom: 1rem;
+
+          .wrap {
+            min-width: 0;
+            flex: 1;
+          }
+
+          .top {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 1rem;
+          }
+
+          .same {
+            font-size: 1.5rem;
+          }
+
+          img {
+            width: 95px;
+            height: 95px;
+            object-fit: cover;
+            border-radius: 50%;
+            flex-shrink: 0;
+          }
+        }
+      }
+    }
+  }
+}

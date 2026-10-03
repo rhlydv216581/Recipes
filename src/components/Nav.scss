@@ -1,0 +1,90 @@
+.navbar {
+  &  ::-webkit-scrollbar{
+      display: none;
+    }
+  min-height: 5rem;
+  width: 100%;
+  padding: 0rem 1rem;
+  background:var(--primary);
+  display: flex;
+  align-items: center;
+  // justify-content: space-around;
+  justify-content: space-between;
+  border-radius: 3rem;
+  gap: 1rem;
+overflow-x: hidden;
+  .logo {
+    height: 3.5rem;
+    flex-shrink: 0;
+    width: 4rem;
+
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit:contain;
+      object-position: center;
+      border-radius: 2rem;
+    }
+  }
+
+  .navlink {
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    overflow-x: auto;
+    white-space: nowrap;
+    // opacity: 0;
+    opacity: 1;
+    transform: translateX(0);
+    transition: transform 0.5s  ease;
+     &::-webkit-scrollbar{
+      display: none;
+     }
+    a {
+      color: white;
+      text-decoration: none;
+       &.navlinkactive {
+        color: orangered;
+      }
+    }
+  }
+  // isOpen === true
+  &.active {
+    
+    .navlink {
+      opacity: 0;
+      transform: translateX(120%);
+      transition: transform 0.5s ease,
+      opacity 0.6s ;
+      // display: none;
+       pointer-events: none;
+//       ointer-events: none; ka simple matlab hai:
+
+// Element mouse/touch ke clicks ko receive nahi karega.
+    }
+  }
+}
+
+.nav-toggle-button {
+  color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.8rem;
+  border: none;
+  background: transparent;
+}
+@media (min-width: 1024px)
+{
+  
+    &  ::-webkit-scrollbar{
+      display: none;
+    }
+  .navbar{
+    background: var(--primary);
+    padding: 0rem 4rem;
+    height: 6rem;
+    
+    // padding: 1rem;
+  }
+}

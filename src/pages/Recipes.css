@@ -1,0 +1,30 @@
+.showrecipes{
+    height: 100%;
+    width: 100%;
+    /* background: #000; */
+    /* overflow-x: hidden;   */
+     /* display: flex; */
+  align-items: center;
+  gap: 10px;
+}
+.created-title {
+  width: fit-content;
+  margin: 0 auto;
+  display: block;
+     white-space: nowrap;
+  font-size: 1.7rem;
+  padding: 8px 16px;
+  border-radius: 20px;
+  color:#9f5647;
+    /* color: rgb(241, 229, 209);; */
+  background: rgba(159, 86, 71, 0.30);
+  backdrop-filter: blur(4px);
+  border: 5px solid rgba(255, 255, 255, 0.3);
+
+  font-weight: 600;
+}
+.created-title img {
+  width: 2rem;
+  height: 2rem;
+  margin: 0rem 0.4rem;
+}

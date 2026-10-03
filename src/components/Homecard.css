@@ -1,0 +1,6 @@
+.home-page .Recipecard::before {
+  display: none;
+}
+.cruise-page .Recipecard::before {
+  display: none;
+}

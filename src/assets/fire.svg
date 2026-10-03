@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   height="365.87109"
+   width="310"
+   version="1.1"
+   viewBox="0 0 310 365.87109"
+   id="svg2">
+  <title
+     id="title958">Fire remix</title>
+  <defs
+     id="defs6">
+    <linearGradient
+       id="linearGradient894">
+      <stop
+         stop-color="#fcfc9e"
+         offset="0"
+         id="stop860" />
+      <stop
+         stop-color="#fafa8f"
+         offset="0.0625"
+         id="stop862" />
+      <stop
+         stop-color="#fbfb7a"
+         offset="0.125"
+         id="stop864" />
+      <stop
+         stop-color="#fcf860"
+         offset="0.1875"
+         id="stop866" />
+      <stop
+         stop-color="#fbf347"
+         offset="0.25"
+         id="stop868" />
+      <stop
+         stop-color="#faef2e"
+         offset="0.3125"
+         id="stop870" />
+      <stop
+         stop-color="#f8e81c"
+         offset="0.375"
+         id="stop872" />
+      <stop
+         stop-color="#f1d816"
+         offset="0.4375"
+         id="stop874" />
+      <stop
+         stop-color="#f0c122"
+         offset="0.5"
+         id="stop876" />
+      <stop
+         stop-color="#f8a932"
+         offset="0.5625"
+         id="stop878" />
+      <stop
+         stop-color="#f89627"
+         offset="0.625"
+         id="stop880" />
+      <stop
+         stop-color="#f48419"
+         offset="0.6875"
+         id="stop882" />
+      <stop
+         stop-color="#eb7609"
+         offset="0.75"
+         id="stop884" />
+      <stop
+         stop-color="#da6b03"
+         offset="0.8125"
+         id="stop886" />
+      <stop
+         stop-color="#c85f00"
+         offset="0.875"
+         id="stop888" />
+      <stop
+         stop-color="#b45500"
+         offset="0.9375"
+         id="stop890" />
+      <stop
+         stop-color="#a24e01"
+         offset="1"
+         id="stop892" />
+    </linearGradient>
+    <linearGradient
+       gradientTransform="translate(157,113.38672)"
+       gradientUnits="userSpaceOnUse"
+       y2="247.48438"
+       x2="1.8574219"
+       y1="-107.34642"
+       x1="2.0029244"
+       id="linearGradient928"
+       xlink:href="#linearGradient894" />
+    <filter
+       x="0"
+       width="1"
+       height="1"
+       y="0"
+       id="filter938"
+       style="color-interpolation-filters:sRGB">
+      <feTurbulence
+         id="feTurbulence930"
+         baseFrequency="0.19900000000000001 0.068000000000000005"
+         type="fractalNoise"
+         seed="97"
+         numOctaves="2" />
+      <feGaussianBlur
+         scale="29.399999999999999"
+         id="feGaussianBlur932"
+         result="result91"
+         stdDeviation="0.25" />
+      <feDisplacementMap
+         id="feDisplacementMap934"
+         in2="result91"
+         result="result1"
+         in="SourceGraphic"
+         xChannelSelector="R"
+         yChannelSelector="G"
+         scale="29.390681" />
+      <feComposite
+         id="feComposite936"
+         operator="atop"
+         in2="SourceGraphic"
+         in="result1" />
+    </filter>
+    <linearGradient
+       gradientTransform="translate(157,113.38672)"
+       gradientUnits="userSpaceOnUse"
+       y2="247.48438"
+       x2="1.8574219"
+       y1="68.421837"
+       x1="-10.965922"
+       id="linearGradient946"
+       xlink:href="#linearGradient894" />
+  </defs>
+  <g
+     id="g956">
+    <title
+       id="title960">Fire remix  --  original by Sev (https://openclipart.org/detail/211413/fire)</title>
+    <path
+       style="opacity:1;fill:url(#linearGradient946);fill-opacity:1;stroke:none;stroke-width:5.99999952;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke;filter:url(#filter938)"
+       d="m 128.00759,153.77771 c -4.02942,1.38724 -0.48173,6.19138 0.20349,8.82305 12.02674,29.12045 19.82221,61.62929 12.34345,93.07927 -4.378,17.00567 -15.37514,34.29778 -32.77492,38.66042 -15.039698,3.94742 -29.906832,-5.99316 -38.113078,-18.52741 -5.114597,-6.92167 -7.459495,-15.37305 -10.70934,-23.23625 -1.58117,-3.29864 -5.918582,-0.8519 -5.014362,2.40005 2.45675,28.18465 20.061337,52.01722 40.165846,69.85285 17.930494,15.87395 38.627714,31.60605 62.078124,35.34177 5.28508,0.84193 9.56375,-0.82491 15.72997,-3.23046 23.37015,-10.90822 47.59524,-23.87629 62.57235,-46.28781 5.98577,-9.56568 10.39369,-21.04546 9.68638,-32.57982 -1.85162,-3.92654 -5.38127,0.20872 -6.48142,2.5398 -7.43478,11.68893 -17.37519,24.27702 -31.55192,26.13119 -7.6198,1.09411 -15.9261,-2.76603 -18.57531,-10.62987 -4.95851,-13.64827 -4.56364,-28.21731 -6.76402,-42.60046 -2.81533,-28.10552 -11.36869,-56.39765 -29.34862,-78.15129 -6.63737,-7.80362 -13.57844,-15.75489 -22.05794,-21.39679 -0.44028,-0.17167 -0.91942,-0.25504 -1.38868,-0.18824 z"
+       id="path858" />
+    <path
+       style="fill:url(#linearGradient928);fill-opacity:1;stroke:none;stroke-width:2;filter:url(#filter938)"
+       d="m 136.07617,5 c -45.230764,26.307687 -56.306639,61.845403 -56.306639,95.07617 0,33.23078 11.539063,64.15355 11.539063,81.23047 0,18.92308 -15.230769,30 -30,30 C 39.15475,211.30664 29,196.53711 29,154.53711 14.23077,175.76788 5,203.46139 5,237.61524 5,293.92294 68.857423,346.10187 158.85742,360.8711 101.16511,332.71725 58.076172,295.30709 58.076172,251.46094 c 7.384615,31.38461 25.847056,46.1543 44.308598,46.1543 21.6923,0 44.30664,-22.61584 44.30664,-64.1543 0,-19.38462 -5.07693,-43.38387 -18,-71.07617 78.92307,60 30.00165,146.30664 75.23242,146.30664 7.38461,0 22.61553,-3.69231 37.38476,-30 0,33.6923 -22.45117,59.5643 -82.45117,82.17969 C 229.93434,360.8711 305,316.07602 305,248.69141 c 0,-22.61539 -6.92338,-48.92203 -14.76953,-62.30664 0,38.76924 -7.84661,62.30664 -34.1543,62.30664 -14.76923,0 -30,-11.07693 -30,-30 0,-23.07693 15.69336,-48.46079 15.69336,-77.07617 0,-18 -6.46184,-36.00106 -20.76953,-51.693364 0,40.153844 -22.154,54.000004 -43.38477,54.000004 -26.30769,0 -55.8457,-22.15309 -55.8457,-71.076176 0,-18.46153 4.1528,-41.076477 14.30664,-67.845704 z"
+       id="path4" />
+  </g>
+  <metadata
+     id="metadata6">
+    <rdf:RDF>
+      <cc:Work>
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <cc:license
+           rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/" />
+        <dc:publisher>
+          <cc:Agent
+             rdf:about="http://openclipart.org/">
+            <dc:title>Openclipart.org</dc:title>
+          </cc:Agent>
+        </dc:publisher>
+        <dc:title>Fire remix</dc:title>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Arvin61r58</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:identifier>https://openclipart.org/</dc:identifier>
+        <dc:source>https://openclipart.org/user-detail/Arvin61r58</dc:source>
+        <dc:contributor>
+          <cc:Agent>
+            <dc:title>Sev (https://openclipart.org/detail/211413/fire)</dc:title>
+          </cc:Agent>
+        </dc:contributor>
+        <dc:subject>
+          <rdf:Bag>
+            <rdf:li>fire</rdf:li>
+            <rdf:li>flame</rdf:li>
+            <rdf:li>icon</rdf:li>
+          </rdf:Bag>
+        </dc:subject>
+      </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/publicdomain/zero/1.0/">
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Reproduction" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+</svg>
