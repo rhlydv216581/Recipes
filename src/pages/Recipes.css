@@ -32,3 +32,36 @@ padding: 0 0.5rem;
   height: 2rem;
   margin: 0rem 0.4rem;
 }
+
+/* =========================================
+   LAPTOP / DESKTOP FIX
+   ========================================= */
+
+@media (min-width: 1024px) {
+
+  .showrecipes .Recipeallcard {
+    width: 100%;
+    max-width: 1200px;
+
+    margin: 0 auto;
+    padding: 0;
+
+    box-sizing: border-box;
+
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+
+    gap: 24px;
+  }
+
+  .showrecipes .Recipeallcard .Recipecard {
+    width: 100%;
+    max-width: none;
+
+    /* 👇 card height */
+    height: 34rem;
+
+    min-width: 0;
+    box-sizing: border-box;
+  }
+}
