@@ -19,12 +19,16 @@ $btn-text: #0d282b;
   100% { background-position: 0% 50%; }
 }
 .Recipeallcard {
-  display: flex;
-  // flex-direction: column;
+   display: flex;
   flex-wrap: wrap;
   gap: 24px;
   justify-content: center;
   padding: 20px;
+  font-family: $font-family;
+
+  width: 100%;
+  box-sizing: border-box;
+  overflow-x: hidden;
   font-family: $font-family;
 }
 
@@ -33,8 +37,8 @@ $btn-text: #0d282b;
   // flex-direction: row;
   position: relative;
   width: 100%;
-  max-width: 380px; // Image jitna width hai
-  height: 600px; // Image jitni height hai
+  max-width: 30rem; // Image jitna width hai
+  height: 30rem; // Image jitni height hai
   border-radius: $card-radius;
   background-size: cover;
   background-position: center;
@@ -62,9 +66,9 @@ $btn-text: #0d282b;
      animation: moveGradient 8s ease infinite;
   }
   // home page mai nhi dekhga before walla
-  .home-page .Recipecard::before {
-  display: none;
-}
+  // .home-page .Recipecard::before {
+  // display: none;
+// }
 
   // Info Section (Jo image ke upar hai)
   .info {

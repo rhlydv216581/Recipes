@@ -6,6 +6,7 @@ import Singlerecipes from '../pages/Singlerecipes'
 import About from '../pages/About';
 import Recipes from '../pages/Recipe';
 import Createrecipes from '../pages/Createrecipes';
+import NotFound from '../components/NotFound'
 const Mainroute = () => {
   return (
     <Routes>
@@ -13,6 +14,8 @@ const Mainroute = () => {
        <Route path='/cuisine/:item' element={<Crusine/>} />
        <Route path='/about' element={<About/>} />
        <Route path='/Recipes' element={<Recipes/>} />
+       <Route path="*" element={<NotFound />} />
+      
        <Route path='/Recipes/detail/:id' element={<Singlerecipes/>} />
        {/* <Route path='/' element = {<Cusine/>} */}
        {/* <Route path='/' */}

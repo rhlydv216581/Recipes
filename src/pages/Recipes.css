@@ -1,20 +1,24 @@
 .showrecipes{
-    height: 100%;
-    width: 100%;
-    /* background: #000; */
-    /* overflow-x: hidden;   */
-     /* display: flex; */
+     height: 100%;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+padding: 0 0.5rem;
+  overflow-x: hidden;
+  overflow-y: visible;
+
   align-items: center;
   gap: 10px;
 }
 .created-title {
-  width: fit-content;
+  width: 100%;
   margin: 0 auto;
   display: block;
+  text-align: center;
      white-space: nowrap;
-  font-size: 1.7rem;
-  padding: 8px 16px;
-  border-radius: 20px;
+  font-size: 1.5rem;
+  padding: 0.7rem ;
+  border-radius: 1.2rem;
   color:#9f5647;
     /* color: rgb(241, 229, 209);; */
   background: rgba(159, 86, 71, 0.30);
