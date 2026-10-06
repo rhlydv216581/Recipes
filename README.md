@@ -10,3 +10,8 @@ Currently, two official plugins are available:
 ## Expanding the ESLint configuration
 
 If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+
+live link -- https://recipe-rhlydv216581.vercel.app/
+ if you wanted build your first project in react  without using backend you can consider these project in these you have url tou can acces data just using fetch and axios  the url of recipes data is https://dummyjson.com/recipes
+ after compelting these peoject you under stand how to transfer data throe propes  how we use contexapi usestate useeffect  in short you can build your logic 
